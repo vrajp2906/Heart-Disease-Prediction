@@ -1,0 +1,114 @@
+Shape of Dataframe :  (319795, 18)
+
+Dataframe is as follows
+    HeartDisease    BMI  Smoking  AlcoholDrinking  ...  SleepTime  Asthma  KidneyDisease  SkinCancer
+0             0  16.60        1                0  ...        5.0       1              0           1
+1             0  20.34        0                0  ...        7.0       0              0           0
+2             0  26.58        1                0  ...        8.0       1              0           0
+3             0  24.21        0                0  ...        6.0       0              0           1
+4             0  23.71        0                0  ...        8.0       0              0           0
+
+[5 rows x 18 columns]
+
+Columns with values True/False need not to be cleaned. We will focus on remaining columns to check if any cleaning is required. Following columns are True/False:
+[HeartDisease, Smoking, AlcoholDrinking, Stroke, DiffWalking, Sex, Diabetic, PhysicalActivity, Asthma, KidneyDisease, SkinCancer]
+
+
+BMI Cleaning
+	Mean of BMI:  28.325398520927465
+	Range of BMI: [ 12.02 , 94.85 ]
+	We will remove BMI values which are more than 80, as in real life they are above normal body range
+	Some data that was above reasonable human capacity i.e. more than 80 was removed.
+
+PhysicalHealth Cleaning
+	Mean of PhysicalHealth:  3.3760837849103793
+	Range of PhysicalHealth: [ 0.0 , 30.0 ]
+	Data is reasonably distributed, no need to clean out.
+
+tMentalHealth Cleaning
+	Mean of MentalHealth:  3.825778101986939
+	Range of MentalHealth: [ 0.0 , 30.0 ]
+	Data is reasonably distributed, no need to clean out.
+
+AgeCategory Cleaning
+	Data is reasonably distributed, no need to clean out.
+
+Race Cleaning
+	Total people:  287880
+Race
+White                             220408
+Hispanic                           25160
+Black                              21330
+Other                               9767
+Asian                               6434
+American Indian/Alaskan Native      4781
+Name: count, dtype: int64
+	Data is reasonably distributed, no need to clean out.
+
+General Health Cleaning
+	Total people:  287880
+	 GenHealth
+Very good    103120
+Good          85785
+Excellent     57241
+Fair          31772
+Poor           9962
+Name: count, dtype: int64
+	Data is reasonably distributed, no need to clean out.
+
+Sleep Time Cleaning
+	Total people:  287880
+	Number of sleeptime values:  SleepTime
+7.0     88096
+8.0     87300
+6.0     60878
+5.0     17377
+9.0     14197
+4.0      6949
+10.0     6903
+12.0     1974
+3.0      1774
+2.0       696
+1.0       487
+11.0      362
+14.0      222
+16.0      215
+15.0      165
+18.0       85
+13.0       82
+20.0       58
+24.0       28
+17.0       18
+22.0        7
+19.0        3
+23.0        3
+21.0        1
+Name: count, dtype: int64
+	Mean of SleepTime:  7.088901625677366
+	Range of SleepTime: [ 1.0 , 24.0 ]
+	Data could be cleaned by removing people with sleep time of more than 12 hrs.
+	As we can see below, people having more than 12 hours of sleep are very less
+	In real life, that also lies above normal sleeping time for normal human.
+	Sleep Time Cleaning
+	Total people: 285810
+	 SleepTime
+7.0     88096
+8.0     87300
+6.0     60878
+5.0     17377
+9.0     14197
+4.0      6949
+10.0     6903
+12.0     1974
+3.0      1774
+11.0      362
+Name: count, dtype: int64
+	Mean of SleepTime:  7.084482698296071
+	Range of SleepTime: [ 3.0 , 12.0 ]
+
+
+Cleaning Summary
+	Original Entries:  319795
+	Final Entries:  285810
+	Number of entries removed:  33985
+	A new file named "heart_data_cleaned".csv has been generated in folder db

@@ -1,0 +1,254 @@
+
+Analysis of Skin Cancer
+
+	Count of individuals with heart disease who did not had SkinCancer: 22143
+	Count of individuals with heart disease who did had SkinCancer: 4580
+	Chi-square statistic: 2563.202979300436
+	P-value: 0.0000000000
+	There is a significant relationship between SkinCancer and heart disease.
+
+Analysis of Kidney Disease
+
+	Count of individuals with heart disease who did not had KidneyDisease: 7539
+	Count of individuals with heart disease who did had KidneyDisease: 3180
+	Chi-square statistic: 6053.487763540765
+	P-value: 0.0000000000
+	There is a significant relationship between KidneyDisease and heart disease.
+
+Analysis of Asthma
+
+	Count of individuals with heart disease who did not had Asthma: 34160
+	Count of individuals with heart disease who did had Asthma: 4481
+	Chi-square statistic: 439.14652675300977
+	P-value: 0.0000000000
+	There is a significant relationship between Asthma and heart disease.
+
+Analysis of Sleep Time
+
+Optimization terminated successfully.
+         Current function value: 0.297585
+         Iterations 6
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:           HeartDisease   No. Observations:               285810
+Model:                          Logit   Df Residuals:                   285808
+Method:                           MLE   Df Model:                            1
+Date:                Mon, 04 Dec 2023   Pseudo R-squ.:               9.493e-05
+Time:                        22:10:12   Log-Likelihood:                -85053.
+converged:                       True   LL-Null:                       -85061.
+Covariance Type:            nonrobust   LLR p-value:                 5.852e-05
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -2.4850      0.037    -67.505      0.000      -2.557      -2.413
+SleepTime      0.0205      0.005      4.020      0.000       0.010       0.030
+==============================================================================
+	Chi-squared value: 1911.9998245674262
+	P-value: 0.0
+	There is significant relation between Sleep Time and Heart Disease
+
+Analysis of General Health
+
+	Chi-squared test statistic: 19049.415749486772
+	P-value: 0.0
+	There is evidence of a significant association between General Health and Heart Disease.
+
+Analysis of Physical Activity
+
+	Count of individuals with heart disease who did not had PhysicalActivity: 204736
+	Count of individuals with heart disease who did had PhysicalActivity: 16080
+	Chi-square statistic: 2747.6073186715375
+	P-value: 0.0000000000
+	There is a significant relationship between PhysicalActivity and heart disease.
+
+Analysis of Race
+
+	Chi-squared test statistic: 787.3063308412301
+	P-value: 6.446005992246605e-168
+	There is evidence of a significant association between Race and Heart Disease.
+
+Analysis of Age
+
+	Z-test for Proportions in Age Category 65-69:
+	Test Statistic: -188.3008866243486
+	P-value: 0.0
+	Age Category 65-69. There is evidence of a significant difference in the proportions of heart disease.
+
+	Z-test for Proportions in Age Category 75-79:
+	Test Statistic: -120.05214496852876
+	P-value: 0.0
+	Age Category 75-79. There is evidence of a significant difference in the proportions of heart disease.
+
+	Z-test for Proportions in Age Category 40-44:
+	Test Statistic: -186.97458705355697
+	P-value: 0.0
+	Age Category 40-44. There is evidence of a significant difference in the proportions of heart disease.
+
+	Z-test for Proportions in Age Category 70-74:
+	Test Statistic: -161.25524984581708
+	P-value: 0.0
+	Age Category 70-74. There is evidence of a significant difference in the proportions of heart disease.
+
+	Z-test for Proportions in Age Category 80 or older:
+	Test Statistic: -108.39870495931285
+	P-value: 0.0
+	Age Category 80 or older. There is evidence of a significant difference in the proportions of heart disease.
+
+	Z-test for Proportions in Age Category 55-59:
+	Test Statistic: -198.56426966024355
+	P-value: 0.0
+	Age Category 55-59. There is evidence of a significant difference in the proportions of heart disease.
+
+	Z-test for Proportions in Age Category 60-64:
+	Test Statistic: -197.88499438422556
+	P-value: 0.0
+	Age Category 60-64. There is evidence of a significant difference in the proportions of heart disease.
+
+	Z-test for Proportions in Age Category 50-54:
+	Test Statistic: -192.6299674623694
+	P-value: 0.0
+	Age Category 50-54. There is evidence of a significant difference in the proportions of heart disease.
+
+	Z-test for Proportions in Age Category 45-49:
+	Test Statistic: -187.0038114872583
+	P-value: 0.0
+	Age Category 45-49. There is evidence of a significant difference in the proportions of heart disease.
+
+	Z-test for Proportions in Age Category 18-24:
+	Test Statistic: -177.57089839346546
+	P-value: 0.0
+	Age Category 18-24. There is evidence of a significant difference in the proportions of heart disease.
+
+	Z-test for Proportions in Age Category 35-39:
+	Test Statistic: -187.0486632957759
+	P-value: 0.0
+	Age Category 35-39. There is evidence of a significant difference in the proportions of heart disease.
+
+	Z-test for Proportions in Age Category 30-34:
+	Test Statistic: -178.02998029623447
+	P-value: 0.0
+	Age Category 30-34. There is evidence of a significant difference in the proportions of heart disease.
+
+	Z-test for Proportions in Age Category 25-29:
+	Test Statistic: -167.9400154946858
+	P-value: 0.0
+	Age Category 25-29. There is evidence of a significant difference in the proportions of heart disease.
+
+Analysis of Gender
+
+	39.35% were females having heart disease
+	60.65% were males having heart disease
+	Z-test for Proportions:
+	Test Statistic: 37.2576033785599
+	P-value: 7.980467691160784e-304
+	There is evidence of a significant difference in the proportions of heart disease between genders.
+
+Analysis of Difficulty in Walking
+
+	Count of individuals with heart disease who did not had DiffWalking: 31197
+	Count of individuals with heart disease who did had DiffWalking: 9137
+	Chi-square statistic: 11260.122913747653
+	P-value: 0.0000000000
+	There is a significant relationship between DiffWalking and heart disease.
+
+Analysis of Mental Health
+
+Optimization terminated successfully.
+         Current function value: 0.297285
+         Iterations 6
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:           HeartDisease   No. Observations:               285810
+Model:                          Logit   Df Residuals:                   285808
+Method:                           MLE   Df Model:                            1
+Date:                Mon, 04 Dec 2023   Pseudo R-squ.:                0.001105
+Time:                        22:10:14   Log-Likelihood:                -84967.
+converged:                       True   LL-Null:                       -85061.
+Covariance Type:            nonrobust   LLR p-value:                 8.960e-43
+================================================================================
+                   coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------
+const           -2.3843      0.007   -320.750      0.000      -2.399      -2.370
+MentalHealth     0.0109      0.001     14.067      0.000       0.009       0.012
+================================================================================
+	Chi-squared value: 799.8312970029571
+	P-value: 6.628652542575942e-149
+	There is significant relation between Mental Health and Heart Disease
+
+Analysis of Physical Health
+
+Optimization terminated successfully.
+         Current function value: 0.286893
+         Iterations 6
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:           HeartDisease   No. Observations:               285810
+Model:                          Logit   Df Residuals:                   285808
+Method:                           MLE   Df Model:                            1
+Date:                Mon, 04 Dec 2023   Pseudo R-squ.:                 0.03602
+Time:                        22:10:16   Log-Likelihood:                -81997.
+converged:                       True   LL-Null:                       -85061.
+Covariance Type:            nonrobust   LLR p-value:                     0.000
+==================================================================================
+                     coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------
+const             -2.5927      0.008   -331.061      0.000      -2.608      -2.577
+PhysicalHealth     0.0515      0.001     84.785      0.000       0.050       0.053
+==================================================================================
+	Chi-squared value: 8515.553055729291
+	P-value: 0.0
+	There is significant relation between Physical Health and Heart Disease
+
+Analysis of Stroke
+
+	Count of individuals with heart disease who did not had stroke: 6842
+	Count of individuals with heart disease who did had stroke: 3894
+	Chi-square statistic: 10506.697261789051
+	P-value: 0.0000000000
+	There is a significant relationship between Stroke and heart disease.
+
+Analysis of Alcohol Drinking
+
+	Count of individuals with heart disease who do not drink: 18063
+	Count of individuals with heart disease who drink: 1022
+	Chi-square statistic: 300.2789385394036
+	P-value: 0.0000000000
+	There is a significant relationship between Alcohol Drinking and heart disease.
+
+Analysis of Diabetes
+
+	Count of individuals with heart disease without diabetes: 32587
+	Count of individuals with heart disease with diabetes: 8611
+	Chi-square statistic: 8809.365236991676
+	P-value: 0.0000000000
+	There is a significant relationship between diabetes and heart disease.
+	Analysis of Smoking
+
+	Count of individuals with heart disease who doesn't smoke: 103698
+	Count of individuals with heart disease who smoke: 14632
+	Chi-square statistic: 3222.5669038707038
+	P-value: 0.00000
+	There is a significant relationship between Smoking and heart disease.
+Analysis of BMI
+
+Optimization terminated successfully.
+         Current function value: 0.296658
+         Iterations 6
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:           HeartDisease   No. Observations:               285810
+Model:                          Logit   Df Residuals:                   285808
+Method:                           MLE   Df Model:                            1
+Date:                Mon, 04 Dec 2023   Pseudo R-squ.:                0.003212
+Time:                        22:10:18   Log-Likelihood:                -84788.
+converged:                       True   LL-Null:                       -85061.
+Covariance Type:            nonrobust   LLR p-value:                7.467e-121
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -3.0646      0.031    -98.186      0.000      -3.126      -3.003
+BMI            0.0245      0.001     24.071      0.000       0.022       0.026
+==============================================================================
+	Chi-squared value: 5428.528545217224
+	P-value: 1.941772325437633e-152
+	There is significant relation between BMI and Heart Disease
