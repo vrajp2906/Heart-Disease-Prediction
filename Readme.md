@@ -18,7 +18,7 @@ Results of commands for /py/*.py will show up in /output/*/ respective folder
 
 For Data Cleaning, run the clean.ipynb, inside the ipynb/ directory.
 
-**NOTE**: heart_cleaned.csv is already present inside the db/ directory.
+**NOTE**: heart_data_cleaned.csv is already present inside the db/ directory.
 
 ## Exploratory Data Analysis
 
